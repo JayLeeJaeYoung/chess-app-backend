@@ -24,4 +24,4 @@ I chose to represent the chess board as a 1D array of size 64 where the player i
 
 The detailed algorithm to check en passant move, en passant capture (i.e. capturing the pawn who just made an en passant move), castle, check, checkmate, stalemate are commented throughout games-helper.js.
 
-
+The token is set to expire after 3 hours.
