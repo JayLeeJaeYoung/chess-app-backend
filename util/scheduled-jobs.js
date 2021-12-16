@@ -32,7 +32,7 @@ const cleanUpDatabase = async () => {
     deleteCount = await Game.deleteMany({ time: { $lte: yesterday } });
     console.log("Old game data deleted: " + deleteCount);
   } catch (err) {
-    return next(new HttpError("Old user/game data deletion fail " + err), 500);
+    console.log(`error occurred: ${err}`);
   }
 };
 
