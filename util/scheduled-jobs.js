@@ -1,4 +1,4 @@
-const User = require("./models/user");
+const User = require("../models/user");
 const Game = require("../models/game");
 
 // const job = new CronJob("00 00 00 * * *", async () => {
