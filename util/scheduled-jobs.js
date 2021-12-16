@@ -1,3 +1,6 @@
+// instead of using CronJob in app.js, I have Heroku Scheduler that runs every day
+// node util/scheduled-jobs.js
+
 const User = require("../models/user");
 const Game = require("../models/game");
 const { MONGODB_URL } = require("./config");
@@ -47,6 +50,8 @@ const cleanUpDatabase = async () => {
   } catch (err) {
     console.log(`error occurred: ${err}`);
   }
+
+  client.close();
 };
 
 cleanUpDatabase();
